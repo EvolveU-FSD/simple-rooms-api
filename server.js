@@ -17,9 +17,9 @@ const roomOfRequirements = {
     name: 'Hagrids Hut',
     messages: [
         {
-            name: 'Hagrid',
+            name: 'Harry Potter',
             date: new Date(),
-            messageText: 'Ah, go boil yer heads, both of yeh. Harry—yer a wizard.'
+            messageText: '"It is a room that a person can only enter when they have real need of it. Sometimes it is there, and sometimes it is not, but when it appears, it is always equipped for the seeker\'s needs"'
         }
     ]
 }
@@ -57,7 +57,7 @@ const ravenclawHouse = {
     ]
 }
 const slytherinHouse = {
-    id: '5',
+    id: '6',
     name: 'Slytherin House',
     messages: [
         {
@@ -69,6 +69,7 @@ const slytherinHouse = {
 
 const rooms = [
     hagridsHut,
+    roomOfRequirements,
     gryffindorHouse,
     hufflepuffHouse,
     ravenclawHouse,
