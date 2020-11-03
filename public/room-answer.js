@@ -58,5 +58,11 @@ function getParametersFromUrl() {
 
 let roomId = getParametersFromUrl().roomId
 
-// make your fetch call and update the page accordingly right here!
-
+// make your fetch call and update the page accordingly
+fetch('/api/rooms/' + roomId)
+    .then((response) => response.json())
+    .then((roomData) => {
+        console.log('I got the room!')
+        console.log(roomData)
+        populateRoom(roomData)
+    })

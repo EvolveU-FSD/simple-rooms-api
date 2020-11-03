@@ -1,14 +1,5 @@
 // functions to update the page from data
 
-function setPageTitle(newTitle) {
-    document.title = newTitle
-}
-
-function setRoomName(roomName) {
-    let roomNameDiv = document.getElementById('roomName')
-    roomNameDiv.textContent = roomName
-}
-
 function makeDivWithClassAndText(className, text) {
     let div = document.createElement('div')
     div.classList.add(className)
@@ -43,8 +34,6 @@ function populateMessageList(messageArray) {
 }
 
 function populateRoom(roomData) {
-    setPageTitle(roomData.name + " - Message Board")
-    setRoomName(roomData.name)
     populateMessageList(roomData.messages)
 }
 
