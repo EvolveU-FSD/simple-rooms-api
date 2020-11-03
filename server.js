@@ -14,7 +14,7 @@ const hagridsHut = {
 
 const roomOfRequirements = {
     id: '2',
-    name: 'Hagrids Hut',
+    name: 'Room of Requirement',
     messages: [
         {
             name: 'Harry Potter',
@@ -101,6 +101,7 @@ app.post('/api/rooms/:roomName', function (req, res) {
     res.send('saving a post');
 });
 
+app.use('/', express.static('public'))
 
 const port = process.env.PORT || 3000
 app.listen(port, () => console.log(`Server listening at ${port}`))
