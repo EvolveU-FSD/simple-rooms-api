@@ -48,6 +48,10 @@ function populateRoom(roomData) {
     populateMessageList(roomData.messages)
 }
 
+function navigateToPost() {
+    window.location="/post.html?roomId=" + roomId
+}
+
 // Utility method to support reading a "parameter" from the anchor tag that brought us here
 // https://stackoverflow.com/questions/5448545/how-to-retrieve-get-parameters-from-javascript
 function getParametersFromUrl() {
@@ -58,5 +62,4 @@ function getParametersFromUrl() {
 
 let roomId = getParametersFromUrl().roomId
 
-// make your fetch call and update the page accordingly right here!
-
+// make your fetch call and update the page accordingly

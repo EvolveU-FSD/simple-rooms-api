@@ -56,6 +56,10 @@ function getParametersFromUrl() {
     return queryDict
 }
 
+function navigateToPost() {
+    window.location="/post.html?roomId=" + roomId
+}
+
 let roomId = getParametersFromUrl().roomId
 
 // make your fetch call and update the page accordingly

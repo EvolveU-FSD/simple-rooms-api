@@ -5,3 +5,22 @@ body {
     font-family: sans-serif;
     background-color: lightblue;
 }
+
+.message-panel {
+    margin-top: 6px;
+    padding: 6px;
+    background-color: white;
+}
+
+.message-date {
+    font-size: 0.75em;
+}
+
+.message-text {
+    margin-top: 6px;
+}
+
+.message-from {
+    margin-top: 6px;
+    font-style: italic
+}
