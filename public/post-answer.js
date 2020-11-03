@@ -22,10 +22,17 @@ function extractMessageFromInputFields() {
 function postMessage() {
     let message = extractMessageFromInputFields()    
 
-    console.log('We have the message: ')
-    console.log(message)
+    let postOptions = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(message)        
+    }
 
-    // make the call the "fetch" to post data to the server
+    fetch('api/rooms/'+roomId, postOptions)
+        .then((response) => { console.log(response)})
+        .then(() => document.location = '/room.html?roomId=' + roomId)
 }
 
 // Utility method to support reading a "parameter" from the anchor tag that brought us here
